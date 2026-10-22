@@ -40,7 +40,7 @@ export default function Hero() {
       <div className="hero-inner">
         <BloomingFlower />
         <div className="hero-eyebrow">Your AI Partner</div>
-        <h1 className="hero-name">Full <span>Bloom</span> AI</h1>
+        <h1 className="hero-name">Full <span>Bloom</span> <b>AI</b></h1>
         <p className="hero-tagline">Grow smarter. <em>Bloom bolder.</em></p>
         <p className="hero-sub">
           We help small businesses harness the power of AI — no jargon, no overwhelm, no six-figure budget. Just real transformation.
