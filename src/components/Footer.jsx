@@ -39,7 +39,7 @@ export function Footer() {
     <footer>
       <div className="footer-brand">
         <LogoFlower size={36} />
-        <span className="footer-logo">Full Bloom AI</span>
+        <span className="footer-logo">Full <strong>Bloom</strong> AI</span>
       </div>
       <div className="footer-tag">Applied AI for Small Businesses · {contact.area}</div>
       <div className="footer-divider"></div>

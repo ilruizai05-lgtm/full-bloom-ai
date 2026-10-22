@@ -21,7 +21,7 @@ export default function Header() {
               <LogoFlower size={30} />
             </div>
             <div className="brand-text">
-              Full Bloom AI
+              Full <strong>Bloom</strong> AI
               <small>AI for Small Business</small>
             </div>
           </a>

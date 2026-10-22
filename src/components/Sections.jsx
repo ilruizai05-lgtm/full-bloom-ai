@@ -68,7 +68,7 @@ export function Story() {
         <div className="story-grid reveal">
           <div className="story-visual">
             <LogoFlower size={260} />
-            <div className="wordmark">Full Bloom AI</div>
+            <div className="wordmark">Full <strong>Bloom</strong> AI</div>
           </div>
           <div className="story-text">
             <div className="section-eyebrow">Who We Are</div>
