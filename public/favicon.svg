@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="pA" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#6B21D6"/><stop offset="50%" stop-color="#3B82F6"/><stop offset="100%" stop-color="#06B6D4"/></linearGradient>
+    <linearGradient id="pB" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#3B82F6"/><stop offset="60%" stop-color="#7C3AED"/><stop offset="100%" stop-color="#EC4899"/></linearGradient>
+    <linearGradient id="pC" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="0%" stop-color="#06B6D4"/><stop offset="50%" stop-color="#6B21D6"/><stop offset="100%" stop-color="#EC4899"/></linearGradient>
+  </defs>
+  <g opacity="0.95">
+    <ellipse cx="50" cy="28" rx="14" ry="22" fill="url(#pA)" stroke="#fff" stroke-width="2"/>
+    <ellipse cx="50" cy="28" rx="14" ry="22" fill="url(#pA)" stroke="#fff" stroke-width="2" transform="rotate(120 50 50)"/>
+    <ellipse cx="50" cy="28" rx="14" ry="22" fill="url(#pA)" stroke="#fff" stroke-width="2" transform="rotate(240 50 50)"/>
+    <ellipse cx="50" cy="28" rx="14" ry="22" fill="url(#pB)" stroke="#fff" stroke-width="2" transform="rotate(60 50 50)"/>
+    <ellipse cx="50" cy="28" rx="14" ry="22" fill="url(#pB)" stroke="#fff" stroke-width="2" transform="rotate(180 50 50)"/>
+    <ellipse cx="50" cy="28" rx="14" ry="22" fill="url(#pB)" stroke="#fff" stroke-width="2" transform="rotate(300 50 50)"/>
+  </g>
+  <circle cx="50" cy="50" r="8" fill="url(#pC)"/>
+  <circle cx="50" cy="50" r="5" fill="#fff" opacity="0.7"/>
+</svg>

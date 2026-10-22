@@ -1,16 +1,61 @@
-# React + Vite
+# Full Bloom AI — Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **Grow smarter. Bloom bolder.** Applied AI for small businesses in Northern Virginia.
 
-Currently, two official plugins are available:
+The marketing website for Full Bloom AI: workflow automation, custom AI tool
+integration, AI strategy consulting, and done-for-you implementation for small
+businesses.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Built with React + Vite. The layout follows the same structure as the
+[Alabaster Watch & Clock](https://github.com/ilruizai05-lgtm/alabaster-watch-clock)
+site, in Full Bloom AI's blue → violet → pink brand colors with the flower logo.
 
-## React Compiler
+## Page sections
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Header · Hero · Trust strip · Industries · Services · Who We Are · Recent Work ·
+How It Works · FAQ · Contact form · Get in touch · Footer — plus a sticky
+call/book bar on phones and a back-to-top button.
 
-## Expanding the ESLint configuration
+## Editing content
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Almost all text lives in one file: **`src/data/site.js`**
+
+| To change… | Edit in `src/data/site.js` |
+| --- | --- |
+| Email, phone, service area | `contact` |
+| Numbers in the trust strip | `stats` |
+| Industries list | `industries` |
+| Services | `services` |
+| How It Works steps | `steps` |
+| Recent Work projects | `work` (screenshots live in `src/assets/work/`) |
+| FAQ | `faqs` |
+
+Colors and fonts are set at the top of `src/index.css`.
+
+The contact form sends messages through Formspree (endpoint in
+`src/components/ContactForm.jsx`).
+
+## Run it
+
+```bash
+npm install
+npm run dev      # start the dev server
+npm run build    # production build → dist/
+npm run preview  # preview the production build
+```
+
+## Project structure
+
+```
+index.html            # page title, search/social previews, fonts
+public/
+  favicon.svg         # flower logo browser icon
+  og-image.jpg        # social-sharing preview image
+src/
+  App.jsx             # page layout (section order)
+  index.css           # all styles + brand colors
+  data/site.js        # all editable content
+  components/         # Header, Hero, Sections, ContactForm, Footer, LogoFlower…
+  hooks/useReveal.js  # fade-in on scroll
+  assets/work/        # Recent Work screenshots
+```
